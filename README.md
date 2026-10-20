@@ -159,7 +159,7 @@ re-parses the whole log on open, and the snapshots live only in memory.
 - **Idempotency index** is the set of all command ids in the log, kept in memory (unbounded growth).
 - **JSON** supports only flat string/integer objects; there is no support for evolving to nested payloads.
 - **Tested locally only on Windows 11 + JDK 17.** The CI workflow (`.github/workflows/ci.yml`, JDK 17 and 21 on
-  ubuntu-latest) has not been confirmed green yet; JDK 21 and Linux are untested by me.
+  ubuntu-latest) ran green on its first GitHub Actions run (2026-10-20), so JDK 21 and Linux are covered by CI, though I have not run them by hand.
 - The benchmark numbers are from one laptop and noisy; mutation testing was manual and covers 23 hand-picked
   mutations, not a systematic tool run.
 
